@@ -1,0 +1,296 @@
+/****** Global Styles ******/
+body {
+    /* This changes the background of the body section to blue so you can see where the body is,
+       and it checks the connection between index.html and the main.css. The index.html must 
+       have a correct link to the main.css and both must be saved */
+    /* background: pink; */
+    /* cornflowerblue this gets removed after the linkage has been validated */
+
+
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-size: 18px; */
+    color: #5E5D5E;
+}
+
+/* this is a class */
+.content-wrapper {
+    /* outline: 3px dotted red; */
+    width: 1200px;
+    margin: 0 auto;
+    /* auto makes browser calc left and right margins equally. */
+    overflow: auto;
+    /* makes containers holding floating elements  expand to fit their height */
+}
+
+/****** Header Styles ******/
+/* this is a class */
+.homepage-hero {
+    background: url('../img/full-background.png'), #f9efef;
+    /* this is a path to the background image and the fallback color if the image doesn't exist */
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+header h1 {
+    /* outline: 3px dotted red; /*  puts a line around the header*/
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: #7B7E54;
+    width: 300px;
+    padding: 65px 0 65px 25px;
+    /* not sure where these numbers come from */
+    float: left;
+
+    /* margin: 0; */
+    /* rogue picking example */
+    /* zeroes out default margin so you can add your own padding  */
+    /* This helps to precisley control how much spacing is around the element */
+}
+
+header nav {
+    /* outline: 3px dotted green; /* outline: 3px dotted green; */
+    width: 800px;
+    float: right;
+    text-align: right;
+    padding: 75px 25px 75px 0px;
+    /* not sure where these numbers come from */
+}
+
+nav ul li {
+    display: inline-block;
+    /* puts nav items on 1 line */
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #727172;
+    padding-left: 50px;
+    text-decoration: none;
+    /* removes the underline; normally you'd leave it so you know they are links */
+}
+
+header h2 {
+    /* outline: 3px dotted red;  */
+    width: 1000px;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    clear: both;
+    color: #817f80;
+    padding: 20px 0 20px 25px;
+}
+
+
+/****** About Styles ******/
+/* you don't need to define a width for each section because 
+    it is define up top in hte ocntent wrapper.
+ */
+
+#about .content-wrapper {
+    padding: 80px 0;
+    /* order is top right bottom left */
+}
+
+#about h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding-left: 50px;
+}
+
+#about p {
+    /* outline: 3px dotted blue;  */
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 50px;
+    /* display:table-cell; - this seemed to work but they uses the float and width*/
+    /* text-align:left;  - this seemed to work but they uses the float and width*/
+    float: left;
+    width: 500px;
+
+}
+
+/****** Skill Styles ******/
+
+#skills {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#skills .content-wrapper {
+    padding: 115px 0;
+}
+
+#skills h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding: 0 0 40px 0;
+    /* text-align:center; */
+}
+
+.skill-list {
+    /* outline: 3px dotted blue;  */
+    float: left;
+    width: 300px;
+    padding: 0 50px;
+    /* display:table-cell; */
+}
+
+#skills h3 {
+    /* outline: 3px dotted greenyellow;  */
+    font-size: 24px;
+    line-height: 36px;
+    margin: 30px 0 20px 0;
+}
+
+#skills p {
+    /* outline: 3px dotted orange;  */
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    /* padding:115px 50px 115px 50px; */
+}
+
+/****** Contact Styles ******/
+
+#contact {
+    background-color: #F9E9E9;
+}
+
+#contact .content-wrapper {
+    padding: 110px 0;
+}
+
+#contact .contact-image {
+    float: left;
+    width: 600px;
+}
+
+#contact #contact-img {
+    width: 550px;
+    height: 300px;
+    /* adda a border around the image*/
+    border: 12px solid #ffffff;
+    margin: 0 50px;
+    box-sizing: border-box;
+}
+
+#contact h2 {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin: 30px 0;
+
+}
+
+#contact h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+#contact .contact-info {
+    float: left;
+    width: 600px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+/* Puts extra space around the <h3> "Let's meet for a cup of coffee." */
+#contact #email-header {
+    margin-bottom: 5px;
+}
+
+/* Puts extra space around the <h3> "Or, follow me on social media:" */
+#contact #socialmedia-header {
+    margin: 20px 0 5px 0;
+}
+
+/* this will format the envelope icon */
+#contact #envelope-icon {
+    margin: 0 10px;
+
+}
+
+/* this will format the envelope icon */
+#contact a {
+    font-size: 24px;
+    line-height: 36px;
+    color: #5e5d5e;
+    text-decoration: none;
+    /* removes the underline; normally you'd leave it so you know they are links */
+}
+
+/* this removes the margin and padding from the left side of the list otherwise it is over one space */
+#contact ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#contact ul li {
+    display: inline-block;
+    /* puts nav items on 1 line */
+}
+
+#contact ul img {
+    padding-right: 40px;
+}
+
+/****** Projects Page Styles ******/
+
+/****** Projects Page Header Styles ******/
+.projects-header {
+    background-color: #F9E9E9;
+}
+
+/****** Projects Page Projects Styles ******/
+
+#projects {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#projects .content-wrapper {
+    padding: 115px 0;
+}
+
+#projects h2 {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    padding: 0 0 40px 0;
+    /* text-align:center; */
+}
+
+.projects-list {
+    /* outline: 3px dotted blue;  */
+    float: left;
+    width: 300px;
+    padding: 0 50px;
+    /* display:table-cell; */
+}
+
+#projects h3 {
+    /* outline: 3px dotted greenyellow;  */
+    font-size: 24px;
+    line-height: 36px;
+    margin: 30px 0 20px 0;
+}
+
+#projects p {
+    /* outline: 3px dotted orange;  */
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    /* padding:115px 50px 115px 50px; */
+}
+
+/* You have to specify only the img in the projects section or 
+    you mess up the icons in the contacts section. 
+*/
+#projects img {
+    width: 300px;
+    /*  Leave this out because the padding is specified 
+        in the margin for #projects h3  */
+    /* padding-bottom: 30px;  */
+}
